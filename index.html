@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+<h1>BMI calculator</h1>
+<p class="subheading">Body Mass Index calculator for <span class="adults">adults</span><span class="bmi-info">BMI calculator is not accurate for children</span></p>
+        </header>
+        <main class="bottom">
+            <label for="height">Height (cm)</label>
+            <input type="number" min="100" max="250" id="height" required>
+            <p class="err-input">Incorrect data</p>
+            <label for="weight">Weight (kg)</label>
+            <input type="number" min="20" max="250" id="weight" required>
+            <p class="err-input">Incorrect data</p>
+            <label for="age">Age</label>
+                <input type="number" min="18" max="120" id="age" required>
+                <p class="err-input">Incorrect data</p>
+                <button class="count">Count</button>
+      
+        <div class="result"></div>
+        <p class="description"></p>
+        <p class="error">Error: missing data</p>
+      
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>
